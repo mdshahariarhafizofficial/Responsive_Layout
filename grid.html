@@ -6,23 +6,56 @@
     <title>Grid</title>
     <style>
         .container{
-            border: 5px solid black;
-            padding: 20px;
             display: grid;
-            grid-template-columns: 100px 100px;
-            /* grid-template-rows: ; */
+            /* grid-template-columns: repeat(2, 200px) auto 200px; */
+            grid-template-columns: repeat(2, 300px) 500px;
+            justify-content: space-between;
+            gap: 24px 20px;
+            margin-top: 60px;
         }
         .container div{
-            width: 200px;
-            height: 100px;
             background: #f36f04;
             border: 5px solid;
             padding: 20px;
             text-align: center;
+            border-radius: 20px;
+        }
+        .menu-container{
+            background: #fc5204;
+            padding: 30px;
+            border: 5px solid black;
+            border-radius: 20px;
+        }
+        .menu-container a{
+            text-decoration: none;
+            font-size: 20px;
+            color: white;
+            font-weight: bold;
+            background: #000;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        .menu-container{
+            display: grid;
+            grid-template-columns: auto 100px;
+            justify-content: space-between;
         }
     </style>
 </head>
 <body>
+    <nav>
+        <div class="menu-container">
+            <div class="menu">
+                <a href="">Home</a>
+                <a href="">Menu</a>
+                <a href="">Contact</a>
+                <a href="">Address</a>
+            </div>
+            <div class="login">
+                <a href="">Login</a>
+            </div>
+        </div>
+    </nav>
     <div class="container">
         <div class="div-1">
             <h1>Div - 1</h1>
