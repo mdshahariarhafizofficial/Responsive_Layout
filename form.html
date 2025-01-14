@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        nav a{
+            text-decoration: none;
+            font-size: 20px;
+            color: white;
+            margin-right: 20px;
+        }
+        nav{
+            background: #ec4806;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            border-radius: 10px;
+        }
+        .form-container .input-style{
+            display: block;
+            width: 90%;
+            margin-top: 20px;
+            padding: 15px 20px;
+            border-radius: 15px;
+            outline: none;
+            border: 2px solid black;
+        }
+        .form-container #login-btn{
+            width: 250px;
+            padding: 15px 40px;
+            background: #000;
+            color: #ec4806;
+            font-size: 20px;
+            font-weight: bold;
+            outline: none;
+            border: 3px solid #ec4806;
+            border-radius: 10px;
+            margin: 20px 0;
+            cursor: pointer;
+        }
+        .form-container{
+            width: 500px;
+            background: #ff6600;
+            padding: 50px;
+            border: 10px solid black;
+            border-radius: 20px;
+        }
+        .form-section{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 90vh;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="menu">
+            <a href="">Home</a>
+            <a href="">Menu</a>
+            <a href="">Contact</a>
+            <a href="">Address</a>
+        </div>
+        <div class="login">
+            <a href="">Login</a>
+        </div>
+    </nav>
+    <section class="form-section">
+        <div class="form-container">
+            <form action="">
+                <input class="input-style" type="email" name="" id="" placeholder="Enter your email" required>
+                <input class="input-style" type="password" name="" id="" placeholder="Enter your password" required>
+                <div style="text-align: center; margin: 20px 0;">
+                    <input id="login-btn" type="submit" value="Login">
+                </div>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
