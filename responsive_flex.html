@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Flex</title>
+    <style>
+        .box{
+            background: #33ee97;
+            padding: 20px;
+            border-radius: 10px;
+            font-weight: 700;
+            font-size: 20px;
+        }
+        .box img{
+            width: 100%;
+        }
+        .container-box{
+            display: flex;
+            gap: 24px;
+        }
+        .div{
+            background: #ff8a1d;
+            padding: 20px;
+            border-radius: 10px;
+            font-weight: 700;
+            font-size: 20px;
+            width: 200px;
+        }
+        .container{
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 30px;
+            gap: 20px;
+        }
+
+        @media screen and (max-width: 576px) {
+            .container-box{
+                flex-direction: column-reverse;
+
+            }
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="container-box">
+            <div class="box">
+                <h2>Box - 1</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt soluta illum ratione aut ipsam excepturi voluptatibus debitis placeat quisquam ducimus ut iusto ullam repellat officia, impedit mollitia saepe voluptates sit, inventore consectetur? Neque omnis vel a, amet consequuntur quod sit!</p>
+            </div>
+            <div class="box">
+                <img src="assets/healthy.webp" alt="">
+                <!-- <h2>Box - 2</h2>
+                <p>Dignissimos id necessitatibus vel esse itaque veritatis sapiente omnis est culpa natus quam, commodi nulla. Labore eius excepturi ex voluptate numquam at, voluptas voluptatem amet dolor non, vitae necessitatibus saepe reprehenderit eum beatae in libero iure tempore voluptatum asperiores rerum!</p> -->
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="div">
+                <h1>Div - 1</h1>
+            </div>
+            <div class="div">
+                <h1>Div - 2</h1>
+            </div>
+            <div class="div">
+                <h1>Div - 3</h1>
+            </div>
+            <div class="div">
+                <h1>Div - 4</h1>
+            </div>
+            <div class="div">
+                <h1>Div - 5</h1>
+            </div>
+            <div class="div">
+                <h1>Div - 6</h1>
+            </div>
+            <div class="div">
+                <h1>Div - 7</h1>
+            </div>
+            <div class="div">
+                <h1>Div - 8</h1>
+            </div>
+            <div class="div">
+                <h1>Div - 9</h1>
+            </div>
+            <div class="div">
+                <h1>Div - 10</h1>
+            </div>
+            <div class="div">
+                <h1>Div - 11</h1>
+            </div>
+            <div class="div">
+                <h1>Div - 12</h1>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
