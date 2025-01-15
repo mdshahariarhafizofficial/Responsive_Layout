@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+</head>
+<style>
+    .food{
+        border: 5px solid;
+        padding: 20px;
+        background: #0ecc93;
+    }
+    .food button{
+        padding: 10px 30px;
+        font-size: 16px;
+        font-weight: bold;
+        border: 5px solid;
+        border-radius: 5px;
+        color: black;
+        cursor: pointer;
+    }
+    .food img{
+        width: 100%;
+        border-radius: 10px;
+    }
+    .container{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 24px;
+    }
+    /* Smaller Device */
+    @media screen and (max-width: 576px) {
+        .container{
+            grid-template-columns: repeat(1, 1fr);
+        }
+        .food{
+            background: #eb9a04;
+        }
+    }
+    /* Medium Device */
+    @media screen and (min-width: 576px) and (max-width: 992px) {
+        .container{
+            grid-template-columns: repeat(2, 1fr);
+        }
+        .food{
+            background: #089cff;
+        }
+    }
+
+</style>
+<body>
+    <section class="foods">
+        <div class="container">
+            <div class="food">
+                <img src="assets/healthy.webp" alt="">
+                <h2>Food - 1</h2>
+                <p>Price - $100</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur eaque ipsa porro tempora quam suscipit error voluptatem explicabo consequuntur maiores, repellendus blanditiis incidunt omnis! Iure voluptas iusto exercitationem sequi repudiandae fuga voluptatem ad at, libero nam perspiciatis aperiam, velit corrupti?</p>
+                <button>Read more...</button>
+            </div>
+            <div class="food">
+                <img src="assets/healthy.webp" alt="">
+                <h2>Food - 2</h2>
+                <p>Price - $200</p>
+                <p>Doloribus, placeat magni! Alias maxime omnis ea. Laborum expedita officiis dolor nobis est impedit minima, enim laboriosam quam pariatur itaque perferendis porro deleniti ullam facilis? Similique quas consequuntur dolorem? Consequuntur quae eaque officia obcaecati quis, temporibus voluptate culpa odio provident.</p>
+                <button>Read more...</button>
+            </div>
+            <div class="food">
+                <img src="assets/healthy.webp" alt="">
+                <h2>Food - 3</h2>
+                <p>Price - $300</p>
+                <p>Architecto adipisci doloremque ad voluptas nostrum cum nihil veniam odio, corrupti ullam ex fugit, quam hic quis unde vel. Minima obcaecati incidunt repellendus ducimus saepe distinctio sapiente quidem praesentium, possimus at non animi eum, esse fuga itaque, fugit velit provident.</p>
+                <button>Read more...</button>
+            </div>
+            <div class="food">
+                <img src="assets/healthy.webp" alt="">
+                <h2>Food - 4</h2>
+                <p>Price - $400</p>
+                <p>Maxime nam corporis fugiat numquam eligendi inventore reiciendis in quaerat fugit, cumque mollitia ex sequi id? Quam, veniam illo nesciunt ducimus nulla atque fugiat recusandae ratione officiis, aspernatur eius mollitia beatae maiores in. Assumenda suscipit fugiat sed ratione maiores iste?</p>
+                <button>Read more...</button>
+            </div>
+            <div class="food">
+                <img src="assets/healthy.webp" alt="">
+                <h2>Food - 5</h2>
+                <p>Price - $500</p>
+                <p>Necessitatibus, amet hic nihil repudiandae dignissimos, minima quo similique quas sed molestias ut vero et incidunt explicabo temporibus autem. Eum explicabo libero, ea reprehenderit quaerat optio quam delectus iusto quisquam voluptates maxime aut assumenda commodi fuga ducimus minus quia molestias.</p>
+                <button>Read more...</button>
+            </div>
+            <div class="food">
+                <img src="assets/healthy.webp" alt="">
+                <h2>Food - 6</h2>
+                <p>Price - $600</p>
+                <p>A commodi sequi numquam repellat eaque quam, perspiciatis odio ullam id sed ipsa atque excepturi aut unde, consectetur neque debitis ratione dolorum impedit iusto odit corrupti quidem incidunt. Modi sequi explicabo voluptatum, dolorum ipsum dolor quaerat placeat consequuntur ea vel?</p>
+                <button>Read more...</button>
+            </div>
+            <div class="food">
+                <img src="assets/healthy.webp" alt="">
+                <h2>Food - 7</h2>
+                <p>Price - $700</p>
+                <p>Atque delectus animi cum suscipit quas molestiae necessitatibus quo sunt fugiat minima qui, ullam ad, nostrum, ipsa ab? Harum, amet nobis! Dolorem perspiciatis dolor similique ipsa culpa distinctio sequi, aspernatur, debitis inventore voluptates vitae doloremque aliquid ut deserunt eos officiis.</p>
+                <button>Read more...</button>
+            </div>
+            <div class="food">
+                <img src="assets/healthy.webp" alt="">
+                <h2>Food - 8</h2>
+                <p>Price - $800</p>
+                <p>Quo unde, minima nobis reiciendis asperiores ad id dolorem mollitia quam autem quisquam quaerat enim fugit odio, fuga provident eveniet impedit ex, quas quasi rem rerum. Minus ducimus incidunt odit autem beatae iusto doloribus animi at, deleniti aperiam neque quo.</p>
+                <button>Read more...</button>
+            </div>
+            <div class="food">
+                <img src="assets/healthy.webp" alt="">
+                <h2>Food - 9</h2>
+                <p>Price - $900</p>
+                <p>Explicabo autem obcaecati sapiente eius aliquam sed. Ex voluptates assumenda esse, ut, aspernatur beatae pariatur repellat alias nisi officia, commodi quidem! Earum animi quisquam aspernatur sint ad quaerat quis perspiciatis vel sit enim iusto, adipisci at doloremque recusandae eligendi cumque.</p>
+                <button>Read more...</button>
+            </div>
+            <div class="food">
+                <img src="assets/healthy.webp" alt="">
+                <h2>Food - 10</h2>
+                <p>Price - $1000</p>
+                <p>Et excepturi dolor natus blanditiis iste odio harum at suscipit aliquam. Commodi rerum necessitatibus odit reiciendis quasi adipisci, cum voluptatibus neque possimus, voluptas id dolorem tempora autem quia quaerat quidem ut eaque voluptates. Excepturi cum magni hic earum facilis sequi?</p>
+                <button>Read more...</button>
+            </div>
+            <div class="food">
+                <img src="assets/healthy.webp" alt="">
+                <h2>Food - 11</h2>
+                <p>Price - $1100</p>
+                <p>Impedit itaque totam id quas ducimus quam minus sapiente quis doloribus ad repellat accusantium, praesentium earum ea enim officiis cum sit nam pariatur distinctio eius aperiam dignissimos veniam. Repellendus sed eum repellat reiciendis asperiores adipisci aut nesciunt voluptatem atque dignissimos!</p>
+                <button>Read more...</button>
+            </div>
+            <div class="food">
+                <img src="assets/healthy.webp" alt="">
+                <h2>Food - 12</h2>
+                <p>Price - $1200</p>
+                <p>Atque tenetur, molestias facilis accusantium quidem molestiae debitis voluptas esse unde est quod voluptate ratione natus voluptatem aspernatur non sunt dolorum commodi, autem eveniet. Itaque, culpa sed porro, voluptate reprehenderit beatae, quam dolor non in praesentium quis perspiciatis dicta necessitatibus.</p>
+                <button>Read more...</button>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
