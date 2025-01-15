@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Structure</title>
+    <style>
+        .header, .nav, .main, .aside, .sidebar, .advertising, .footer{
+            background: bisque;
+            border: 5px solid rgb(245, 89, 17);
+            font-size: 20px;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .nav ul{
+            list-style: none;
+            padding:20px;
+        }
+        .nav ul li a{
+            text-decoration: none;
+        }
+        aside{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding: 20px;
+        }
+        .header{
+            grid-area: header;
+        }
+        .nav{
+            grid-area: nav;
+        }
+        .main{
+            grid-area: main;
+        }
+        .sidebar{
+            grid-area: sidebar;
+        }
+        .advertising{
+            grid-area: advertising;
+        }
+        .footer{
+            grid-area: footer;
+        }
+        .container{
+            display: grid;
+            grid-template-areas:
+            "header header header header"
+            "nav    main   main   sidebar"
+            "nav    main   main   advertising"
+            "footer footer footer footer"
+            ;
+            gap: 20px;
+        }
+
+        /* Responsive Media Query */
+
+        /* Small Device */
+        @media screen and (max-width: 576px) {
+            .container{
+                grid-template-areas: 
+                "header"
+                "nav"
+                "main"
+                "sidebar"
+                "advertising"
+                "footer"
+                ;
+            }
+            aside{
+                padding: 0;
+            }
+            .nav ul{
+                display: flex;
+                gap: 24px;
+                justify-content: space-between;
+            }
+        }
+
+        /* Medium Device */
+        @media screen and (min-width: 576px) and (max-width: 992px) {
+            .container{
+                grid-template-areas: 
+                "header header header"
+                "nav nav nav"
+                "sidebar main main"
+                "advertising footer footer"
+                ;
+            }
+            .nav ul{
+                display: flex;
+                gap: 24px;
+                justify-content: space-between;
+            }
+        }
+
+    </style>
+</head>
+<body class="container">
+    <header class="header">
+        <h2>The Header</h2>
+    </header>
+
+    <nav class="nav">
+        <ul>
+            <li><a href="">Nav 1</a></li>
+            <li><a href="">Nav 2</a></li>
+            <li><a href="">Nav 3</a></li>
+        </ul>
+    </nav>
+
+    <main class="main">
+        <article>
+            <h2>Main article area - 1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum impedit id unde nihil voluptas? Possimus cum quam, nisi nesciunt ratione omnis cupiditate beatae ab sit nostrum ex quos doloribus commodi!</p>
+        </article>
+        <article>
+            <h2>Main article area - 2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum impedit id unde nihil voluptas? Possimus cum quam, nisi nesciunt ratione omnis cupiditate beatae ab sit nostrum ex quos doloribus commodi!</p>
+        </article>
+    </main>
+
+    <aside>
+        <div class="sidebar">
+            <h2>Sidebar</h2>
+        </div>
+        <div class="advertising">
+            <h2>Advertising</h2>
+        </div>
+    </aside>
+
+    <footer class="footer">
+        <h2>The Footer</h2>
+    </footer>
+</body>
+</html>
